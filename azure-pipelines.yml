@@ -17,9 +17,3 @@ steps:
     outputType: 'Library'
     orchestratorConnection: 'TestSuiteDemo'
     outputPath: '$(Build.ArtifactStagingDirectory)\Library'
-- task: UiPathDeploy@2
-  inputs:
-    orchestratorConnection: 'TestSuiteDemo'
-    packagesPath: '$(Build.ArtifactStagingDirectory)\Library'
-    folderName: 'Shared'
-    entryPoints: 'Main.xaml'
